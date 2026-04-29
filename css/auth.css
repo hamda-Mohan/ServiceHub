@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1E88E5;
+    /* Blue (main brand) */
+    --secondary-color: #FFC107;
+    /* Yellow (accent) */
+    --background-color: #F5F7FA;
+    /* Light background */
+
+    /* Text Colors */
+    --text-color: #222831;
+    /* Main text */
+    --muted-text: #6C757D;
+    /* Secondary text */
+
+    /* UI Elements */
+    --card-bg: #FFFFFF;
+    --border-color: #E0E0E0;
+    --card-shadow: rgba(0, 0, 0, 0.08);
+
+    /* Buttons */
+    --btn-primary: #1E88E5;
+    --btn-hover: #1565C0;
+
+    /*  Spacing */
+    --radius: 12px;
+
+    /* font sizes */
+    --font-size-small: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-large: 1.5rem;
+    --font-size-xlarge: 2.5rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container-auth {
+    margin: 50px auto;
+    width: 90%;
+    max-width: 400px;
+    background-color: var(--card-bg);
+    box-shadow: 0 10px 25px var(--card-shadow);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.container-auth h1 {
+    font-size: var(--font-size-large);
+    color: var(--btn-primary);
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    outline: none;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: var(--font-size-base);
+}
+
+.btn {
+    background-color: var(--btn-primary);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: var(--font-size-base);
+    transition: background-color 0.3s ease;
+    border: none;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: var(--btn-hover);
+}
+
+p {
+    color: var(--muted-text);
+    margin-bottom: 15px;
+}
+
+p a {
+    text-decoration: none;
+    color: var(--btn-primary);
+    font-weight: 500;
+}

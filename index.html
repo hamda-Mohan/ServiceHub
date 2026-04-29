@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiceHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Service<span>Hub</span></h1>
+        </div>
+        <a href="#" class="toggle-button" id="toggle-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <ul class="nav-links" id="nav-links">
+            <li class="mobile-user">
+                <span id="welUserMobile">Welcome</span>
+                <button id="logoutBtnMobile" class="btn">Logout</button>
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+
+        </ul>
+        <div class="user">
+            <a href="#" id="welUser">welcome </a>
+            <button id="logoutBtn" class="btn">Logout</button>
+        </div>
+    </nav>
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Welcome to ServiceHub</h1>
+        <p>Your one-stop solution for all your service needs.</p>
+        <a href="html/auth.html" class="btn">Get Started</a>
+    </section>
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="section-info">
+            <h2>About Us</h2>
+            <p>
+                ServiceHub is a modern platform that connects users with trusted service providers
+                in different categories like cleaning, repair, IT services, delivery, and furniture.
+            </p>
+        </div>
+
+        <div class="about-content">
+            <div class="imgpart">
+                <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg" alt="about image">
+            </div>
+
+            <div class="content-part">
+
+                <div class="mission box">
+                    <h3>Our Mission</h3>
+                    <p>
+                        To make service booking easy, fast, and reliable for everyone by connecting
+                        customers with skilled professionals.
+                    </p>
+                </div>
+
+                <div class="vision box">
+                    <h3>Our Vision</h3>
+                    <p>
+                        To become the leading digital service marketplace that improves everyday life
+                        through technology and trust.
+                    </p>
+                </div>
+
+                <div class="choose-us box">
+                    <h3>Why Choose Us</h3>
+                    <p>
+                    <ul>
+                        <li>Trusted providers</li>
+                        <li>Fast booking system</li>
+                        <li>Affordable prices</li>
+                        <li>24/7 support</li>
+                    </ul>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- SERVICES -->
+    <section class="service" id="services">
+        <div class="section-info">
+            <h2>Our Services</h2>
+            <p>Discover the range of services we offer to meet your needs.</p>
+        </div>
+
+        <div class="card-container">
+            <!-- dynamically generate service cards here using JavaScript  -->
+        </div>
+    </section>
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+
+            <span class="close-btn">&times;</span>
+
+            <img id="modal-img">
+
+            <div class="modal-body">
+                <h3 id="modal-title"></h3>
+                <p id="modal-desc"></p>
+
+                <div class="modal-info">
+                    <span id="modal-price"></span>
+                    <span id="modal-status"></span>
+                </div>
+
+                <button id="bookNow" class="btn">Book Now</button>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-about">
+                <h3>Service<span>Hub</span></h3>
+                <p>Your trusted platform for all services.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Email: servicehub@gmail.com</p>
+                <p>Phone: +252 612 777 999</p>
+            </div>
+
+        </div>
+
+        <p class="copyright">© 2026 ServiceHub</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
